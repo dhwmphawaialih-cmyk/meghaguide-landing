@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeghaGuide — Discover the Abode of Clouds</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8fafc;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: linear-gradient(135deg, #1976D2 0%, #0d9488 100%);
+      color: white;
+      padding: 60px 0 50px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .tagline {
+      font-size: 18px;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+    .download-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .btn-primary {
+      background: #fff;
+      color: #1976D2;
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+    section {
+      padding: 50px 0;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1e293b;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: #fff;
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid #e2e8f0;
+    }
+    .feature-icon {
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+    .feature-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: #64748b;
+      line-height: 1.6;
+    }
+    .about {
+      background: #fff;
+      text-align: center;
+    }
+    .about p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      font-size: 16px;
+      color: #475569;
+    }
+    .links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .links a {
+      color: #1976D2;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .links a:hover { text-decoration: underline; }
+    .contact {
+      background: #f0fdf4;
+      text-align: center;
+    }
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 16px;
+      transition: transform 0.2s;
+    }
+    .contact-btn:hover { transform: translateY(-2px); }
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 13px;
+    }
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .tagline { font-size: 16px; }
+      .section-title { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">🏔️</div>
+      <h1>MeghaGuide</h1>
+      <p class="tagline">Explore the Abode of Clouds — Discover Meghalaya with Local Guides</p>
+      <div class="download-btns">
+        <a href="#" class="btn btn-primary">📱 Get it on Google Play</a>
+        <a href="#" class="btn btn-secondary">🍎 Download on App Store</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">About MeghaGuide</h2>
+      <p>
+        MeghaGuide is your companion to explore the Abode of Clouds. Find hidden waterfalls, 
+        sacred forests, breathtaking viewpoints, and connect with local guides who know every secret trail.
+      </p>
+      <p>
+        Whether you're a tourist planning your first trip or a local wanting to share your knowledge, 
+        MeghaGuide bridges the gap between travellers and the authentic Meghalaya experience.
+      </p>
+      <div class="links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms & Conditions</a>
+        <a href="#contact">Contact & Support</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">What You Can Do</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3>Discover Places</h3>
+          <p>Find hidden waterfalls, sacred forests, caves, and breathtaking viewpoints across all 12 districts of Meghalaya.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧭</div>
+          <h3>Connect with Guides</h3>
+          <p>Find verified local guides who know every secret trail and can show you the real Meghalaya.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤫</div>
+          <h3>Share Secret Spots</h3>
+          <p>Know a hidden gem? Suggest new places and become a guide yourself to help fellow travellers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🆘</div>
+          <h3>Emergency Info</h3>
+          <p>Quick access to hospitals, police, and tourist helplines wherever you are in Meghalaya.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌦️</div>
+          <h3>Live Weather</h3>
+          <p>Check real-time weather conditions before you head out to any destination.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>GPS Navigation</h3>
+          <p>Get accurate coordinates and directions to every listed place in the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p style="color: #475569; max-width: 500px; margin: 0 auto;">
+        Have questions, feedback, or found an issue? We're here to help. 
+        Reach out to us directly on WhatsApp.
+      </p>
+      <a href="https://wa.me/xxx?text=Hi%20MeghaGuide%2C%20I%20have%20a%20question%20about..." class="contact-btn">
+        💬 Chat with us on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 MeghaGuide. Made with ❤️ for Meghalaya.</p>
+      <p style="margin-top: 8px;">
+        <a href="#privacy">Privacy Policy</a> · 
+        <a href="#terms">Terms & Conditions</a> · 
+        <a href="#contact">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
